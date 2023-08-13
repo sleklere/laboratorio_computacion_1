@@ -2,42 +2,39 @@
 using namespace std;
 
 int main() {
-  int num1, num2, num3, numMedio, numMenor, numMayor;
+  int contador, n1, n2, n3, n4, n5;
 
-  cout << "Ingrese 3 numeros" << endl;
+  cout << "Ingrese 5 numeros" << endl;
   cout << "Numero 1: ";
-  cin >> num1;
+  cin >> n1;
   cout << "Numero 2: ";
-  cin >> num2;
+  cin >> n2;
   cout << "Numero 3: ";
-  cin >> num3;
-  cout << endl;
+  cin >> n3;
+  cout << "Numero 4: ";
+  cin >> n4;
+  cout << "Numero 5: ";
+  cin >> n5;
 
-  // Calcular numero del medio
+  contador = 0;
 
-  /* Primero evaluo 2 de los 3 nums y los asigno segun corresponda a
-  las variables numMenor y numMayor que sirven para comparar contra
-  el 3 numero para decidir cual es el del medio
-  */
-  if (num1 < num2) {
-    numMenor = num1;
-    numMayor = num2;
-  } else {
-    numMenor = num2;
-    numMayor = num1;
+  if (n1 > 0) {
+    contador++;
   }
-  if (num3 > numMenor) {
-    if (num3 < numMayor) {
-      numMedio = num3;
-    } else {
-      numMedio = numMayor;
-      numMayor = num3;
-    }
-  } else {
-    numMedio = numMenor;
-    numMenor = num3;
+  if (n2 > 0) {
+    contador++;
   }
-  cout << "El numero del medio es: " << numMedio;
+  if (n3 > 0) {
+    contador++;
+  }
+  if (n4 > 0) {
+    contador++;
+  }
+  if (n5 > 0) {
+    contador++;
+  }
+
+  cout << contador << " numeros son positivos";
 
   return 0;
 }
