@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  int num, digito;
+  int num, digito, numDigitosPares = 0;
 
   cout << "Ingrese un numero: ";
   cin >> num;
@@ -26,10 +26,18 @@ int main() {
   // mostrar los digitos
   for (int i = 0; i < numDigitos; i++) {
     int digito = num % div / (div / 10);
+    if (digito % 2 == 0) {
+      numDigitosPares++;
+    }
     cout << digito << endl;
     div /= 10;
   }
   // cout << "Cantidad de digitos: " << digitos << endl;
+  if (numDigitosPares == numDigitos) {
+    cout << "Todos los digitos son pares" << endl;
+  } else {
+    cout << "Todos los digitos son pares" << endl;
+  }
 
   return 0;
 }
