@@ -36,7 +36,7 @@ int main() {
   if (numDigitosPares == numDigitos) {
     cout << "Todos los digitos son pares" << endl;
   } else {
-    cout << "Todos los digitos son pares" << endl;
+    cout << "No todos los digitos son pares" << endl;
   }
 
   return 0;
